@@ -337,15 +337,16 @@ footer {
   position: relative;
   height: 25px;
   margin-bottom: 4px;
+  background-color: #9e9e9e;
 }
 
 .progress-type {
   position: absolute;
   left: 0px;
-  font-weight: 400;
   padding: 3px 30px 2px 10px;
-  color: #ffffff;
-  background-color: rgba(25, 25, 25, 0.2);
+  color: #fff;
+  background-color: rgba(25, 25, 25, 0);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .progress-section {
@@ -446,5 +447,25 @@ button[type="submit"] {
 @media (max-width: 600px) {
   .logo {
     min-height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col.heading {
+    padding: 10px; /* Abstand nach innen reduzieren */
+    margin: 0; /* Rand entfernen */
+    height: auto; /* Höhe automatisch an den Inhalt anpassen */
+    min-height: 100px; /* Mindesthöhe für bessere Anpassung festlegen */
+  }
+
+  .name {
+    font-size: 36px; /* Schriftgröße des Namens für mobile Geräte anpassen */
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 20px; /* Schriftgröße des Titels für mobile Geräte anpassen */
+    margin-top: 10px;
+    margin-bottom: 30px; /* Weniger Abstand unten für kompakteres Layout */
   }
 }
