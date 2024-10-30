@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
 
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 /* -------------------------------------------Colors */
 
 .bg-color-name-title {
@@ -187,10 +174,6 @@ header {
   animation: none;
 }
 
-.container-fluid {
-    flex: 1;
-  }
-
 /* -------------------------------------------Hover.css */
 
 .hvr-sweep-to-bottom:before {
@@ -207,8 +190,6 @@ footer {
   margin: 0;
   padding: 20px;
   bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
   flex-shrink: 0;
 }
 

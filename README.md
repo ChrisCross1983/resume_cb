@@ -1,4 +1,5 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+[Here is the deployed site](https://chriscross1983.github.io/resume_cb/)
 
 Welcome USER_NAME,
 
