@@ -436,6 +436,13 @@ button[type="submit"] {
   }
 }
 
+@media (max-width: 767px) {
+  #nav li:nth-child(3),
+  #nav li:nth-child(4) {
+    border-top: 1px solid #ccc; /* Horizontale Trennlinie oberhalb der dritten und vierten Menüpunkte */
+  }
+}
+
 @media (max-width: 600px) {
   .logo {
     min-height: 250px;
