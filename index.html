@@ -23,10 +23,10 @@
     <title>Christian Borza</title>
   </head>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const downloadLink = document.querySelector('.ui-menu-color-download a');
-  
-      downloadLink.addEventListener('click', function () {
+    document.addEventListener("DOMContentLoaded", function () {
+      const downloadLink = document.querySelector(".ui-menu-color-download a");
+
+      downloadLink.addEventListener("click", function () {
         // Entferne den Fokus nach dem Klicken, um den Hover-Effekt zurückzusetzen
         downloadLink.blur();
       });
@@ -53,7 +53,7 @@
                 >
                   <a href="index.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-home" aria-hidden="true"></i
-                    ><span>Home</span></a
+                    ><span>Willkommen</span></a
                   >
                 </li>
                 <li
@@ -61,7 +61,7 @@
                 >
                   <a href="resume.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-graduation-cap" aria-hidden="true"></i
-                    ><span>Resume</span></a
+                    ><span>Mein Werdegang</span></a
                   >
                 </li>
                 <li
@@ -69,7 +69,7 @@
                 >
                   <a href="contact.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-comments" aria-hidden="true"></i
-                    ><span>Contact</span></a
+                    ><span>Lassen Sie uns sprechen</span></a
                   >
                 </li>
                 <li
@@ -80,7 +80,7 @@
                     target="_blank"
                     class="hvr-sweep-to-bottom"
                     ><i class="fa fa-download" aria-hidden="true"></i
-                    ><span>Download CV</span></a
+                    ><span>Mehr über mich erfahren</span></a
                   >
                 </li>
               </ul>
@@ -89,119 +89,137 @@
         </div>
       </div>
     </header>
-    <section class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 bg-color-personal-info section-column">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="section-heading uppercase">Personal Info</h3>
+    <main>
+      <section class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 bg-color-personal-info section-column">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="section-heading uppercase">
+                  Persönliche Informationen
+                </h3>
+              </div>
+            </div>
+            <div class="personl-info-item">
+              <div class="key">
+                <h5 class="uppercase">Name:</h5>
+              </div>
+              <div class="value">
+                <p>Christian Borza</p>
+              </div>
+            </div>
+            <div class="personl-info-item">
+              <div class="key">
+                <h5 class="uppercase">Adresse:</h5>
+              </div>
+              <div class="value">
+                <p>Am Luß 22, 86931 Prittriching (Deutschland)</p>
+              </div>
+            </div>
+            <div class="personl-info-item">
+              <div class="key">
+                <h5 class="uppercase">Mobil:</h5>
+              </div>
+              <div class="value">
+                <p>+49 162 230 30 39</p>
+              </div>
+            </div>
+            <div class="personl-info-item">
+              <div class="key">
+                <h5 class="uppercase">Email:</h5>
+              </div>
+              <div class="value">
+                <p>cborza83@gmail.com</p>
+              </div>
             </div>
           </div>
-          <div class="personl-info-item">
-            <div class="key">
-              <p class="uppercase"><strong>Name:</strong></p>
+          <div class="col-md-8 bg-color-three-reasons section-column">
+            <div class="row">
+              <div class="col">
+                <h3 class="section-heading uppercase">Über mich</h3>
+              </div>
             </div>
-            <div class="value">
-              <p>Christian Borza</p>
-            </div>
-          </div>
-          <div class="personl-info-item">
-            <div class="key">
-              <p class="uppercase"><strong>Address:</strong></p>
-            </div>
-            <div class="value">
-              <p>Am Luß 22, 86931 Prittriching (Germany)</p>
-            </div>
-          </div>
-          <div class="personl-info-item">
-            <div class="key">
-              <p class="uppercase"><strong>Phone:</strong></p>
-            </div>
-            <div class="value">
-              <p>+49 162 230 30 39</p>
-            </div>
-          </div>
-          <div class="personl-info-item">
-            <div class="key">
-              <p class="uppercase"><strong>Email:</strong></p>
-            </div>
-            <div class="value">
-              <p>cborza83@gmail.com</p>
+            <div class="row">
+              <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                <div class="row">
+                  <div class="col-2">
+                    <i
+                      class="three-reasons-icon fa fa-question"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="col-10">
+                    <h4 class="three-reasons-heading uppercase">
+                      Was mache ich?
+                    </h4>
+                    <p>
+                      "Ich bin ein Sales-Experte mit einem starken technischen
+                      Hintergrund. Mit meiner langjährigen Erfahrung im Vertrieb
+                      und meiner Leidenschaft für Technologie schaffe ich für
+                      Unternehmen effektive, innovative Lösungen, die messbaren
+                      Mehrwert bringen."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                <div class="row">
+                  <div class="col-2">
+                    <i
+                      class="three-reasons-icon fa fa-thumbs-up"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="col-10">
+                    <h4 class="three-reasons-heading uppercase">
+                      Wie mache ich es?
+                    </h4>
+                    <p>
+                      "Mein Ansatz kombiniert eine gründliche Bedarfsanalyse mit
+                      technischer Expertise. Ich verstehe die Herausforderungen
+                      von Kunden und entwickle gezielte, maßgeschneiderte
+                      Lösungen, die sowohl funktional als auch
+                      benutzerfreundlich sind. Kommunikation und eine gute
+                      Zusammenarbeit sind für mich der Schlüssel zum Erfolg."
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
+                <div class="row">
+                  <div class="col-2">
+                    <i
+                      class="three-reasons-icon fa fa-bolt"
+                      aria-hidden="true"
+                    ></i>
+                  </div>
+                  <div class="col-10">
+                    <h4 class="three-reasons-heading uppercase">
+                      Warum sollten sie mich engagieren?
+                    </h4>
+                    <p>
+                      "Ich verbinde eine starke technische Kompetenz mit einem
+                      ausgeprägten Fingerspitzengefühl für Kundenbedürfnisse.
+                      Dank meiner Empathie und meiner Fähigkeit, auf Augenhöhe
+                      zu kommunizieren, verstehe ich die Herausforderungen
+                      meiner Kunden und entwickle innovative Lösungen, die
+                      wirklich Mehrwert schaffen. Mit meiner Erfahrung im
+                      Vertrieb und in der Technik bin ich der ideale Partner für
+                      Unternehmen, die nicht nur wachsen, sondern auch
+                      nachhaltig Beziehungen aufbauen wollen."
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-8 bg-color-three-reasons section-column">
-          <div class="row">
-            <div class="col">
-              <h3 class="section-heading uppercase">About Me</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-              <div class="row">
-                <div class="col-2">
-                  <i
-                    class="three-reasons-icon fa fa-question"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <div class="col-10">
-                  <h4 class="three-reasons-heading uppercase">What do I do?</h4>
-                  <p>
-                    I'm a skilled Full Stack Developer with a wealth of diverse
-                    life and technical experience that I bring to every project.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-              <div class="row">
-                <div class="col-2">
-                  <i
-                    class="three-reasons-icon fa fa-thumbs-up"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <div class="col-10">
-                  <h4 class="three-reasons-heading uppercase">
-                    How do I do it?
-                  </h4>
-                  <p>
-                    I follow form as well as function. I know that the
-                    aesthetics of effective design combined with application
-                    speed, security and reliability combine to create a great
-                    user experience.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-10 offset-1 offset-sm-0 col-sm-4 col-md-6">
-              <div class="row">
-                <div class="col-2">
-                  <i
-                    class="three-reasons-icon fa fa-bolt"
-                    aria-hidden="true"
-                  ></i>
-                </div>
-                <div class="col-10">
-                  <h4 class="three-reasons-heading uppercase">Why hire me?</h4>
-                  <p>
-                    I work quickly and effectively in getting things built and
-                    working across the stack. I'm an excellent communicator who
-                    thrives in bright and enthusiastic teams and I'm also a self
-                    starter when working solo.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="container-fluid">
+      </section>
+    </main>
+    <footer class="container-fluid container-footer">
       <div id="footer-details" class="row">
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">About</h5>
+          <h5 class="uppercase general-sub">Kurz und prägnant</h5>
           <p class="inline-block">
             "Ich bin ein Sales & Tech Allrounder mit einer ausgeprägten
             Fähigkeit, Kundenbedürfnisse zu verstehen und innovative digitale
@@ -211,9 +229,9 @@
           </p>
         </div>
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">Download</h5>
+          <h5 class="uppercase general-sub">Download Bereich</h5>
           <p class="inline-block">
-            Need a printable version of my CV? Download it here.
+            Sie brauchen eine druckbare Version meines Werdegangs? Hier geht es zum Download.
             <a
               href="assets/cv/CV 2024 D - Christian Borza.pdf"
               target="_blank"
@@ -225,7 +243,7 @@
           </p>
         </div>
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub">Social</h5>
+          <h5 class="uppercase general-sub">Social Networking</h5>
           <ul class="list-inline social-links">
             <li class="list-inline-item">
               <a target="_blank" href="#">

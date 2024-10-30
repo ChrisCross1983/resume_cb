@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 /* -------------------------------------------Colors */
 
 .bg-color-name-title {
@@ -11,15 +28,15 @@
 }
 
 .bg-color-personal-info {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
 }
 
 .bg-color-work-history {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
 }
 
 .bg-color-contact {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
 }
 
 .ui-menu-color-home {
@@ -45,6 +62,10 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+
+p {
+  margin-top: 10px;
 }
 
 .uppercase {
@@ -82,6 +103,12 @@ h4 {
 .col-style {
   padding-left: 0;
   padding-right: 0;
+}
+
+.text-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 /* -------------------------------------------Heading */
@@ -186,11 +213,13 @@ header {
 footer {
   background-color: #2c3e50;
   color: #ffffff;
-  min-height: 120px;
-  margin: 0;
-  padding: 20px;
-  bottom: 0;
+  min-height: 150px;
+  box-sizing: border-box;
   flex-shrink: 0;
+}
+
+.container-footer {
+  padding: 20px;
 }
 
 .cv-pdf i {
@@ -291,7 +320,7 @@ footer {
   left: 0px;
   font-weight: 400;
   padding: 3px 30px 2px 10px;
-  color: #2c3e50;
+  color: #ffffff;
   background-color: rgba(25, 25, 25, 0.2);
 }
 
@@ -309,7 +338,7 @@ footer {
 .timeline-item {
   padding: 4em 2em 0em 2em;
   position: relative;
-  color: #ffffff;
+  color: #2c3e50;
   border-left: 1px solid;
 }
 
@@ -345,6 +374,9 @@ footer {
 
 .history-items {
   margin-bottom: 30px;
+  max-height: 650px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
 
 /* ------------------------------------------- Contact Form */
