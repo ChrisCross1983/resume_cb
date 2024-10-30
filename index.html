@@ -22,6 +22,16 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Christian Borza</title>
   </head>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const downloadLink = document.querySelector('.ui-menu-color-download a');
+  
+      downloadLink.addEventListener('click', function () {
+        // Entferne den Fokus nach dem Klicken, um den Hover-Effekt zurückzusetzen
+        downloadLink.blur();
+      });
+    });
+  </script>
   <body>
     <header>
       <div class="row g-0">
@@ -30,7 +40,9 @@
           <div class="row g-0 bg-color-name-title">
             <div class="col heading">
               <h1 class="name">Christian Borza</h1>
-              <h2 class="title">Sales and Tech Enthusiast</h2>
+              <h2 class="title">
+                "Tech-savvy Sales Professional mit Leidenschaft für Kunden"
+              </h2>
             </div>
           </div>
           <div class="row g-0">
@@ -191,13 +203,11 @@
         <div class="col-sm-4">
           <h5 class="uppercase general-sub">About</h5>
           <p class="inline-block">
-            Kunden zu verstehen, Beziehungen zu pflegen und Projekte erfolgreich
-            zum Ziel zu bringen – das ist mein Ding! Mit einem feinen Gespür für
-            die Bedürfnisse meiner Kunden und der Fähigkeit, auf Augenhöhe zu
-            kommunizieren, sorge ich dafür, dass Projekte reibungslos ablaufen
-            und langfristige Partnerschaften entstehen. Mein IT-Verständnis und
-            mein kreativer, empathischer Ansatz machen mich zu einem
-            verlässlichen Partner – immer Authentisch und mit einer Prise Humor!
+            "Ich bin ein Sales & Tech Allrounder mit einer ausgeprägten
+            Fähigkeit, Kundenbedürfnisse zu verstehen und innovative digitale
+            Lösungen zu entwickeln. Ob im Vertrieb oder in der Technik – ich
+            bringe meine Expertise und Empathie ein, um echte Mehrwerte für
+            meine Kunden zu schaffen."
           </p>
         </div>
         <div class="col-sm-4">
