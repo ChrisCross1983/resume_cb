@@ -27,7 +27,6 @@
       const downloadLink = document.querySelector(".ui-menu-color-download a");
 
       downloadLink.addEventListener("click", function () {
-        // Entferne den Fokus nach dem Klicken, um den Hover-Effekt zurückzusetzen
         downloadLink.blur();
       });
     });
@@ -42,8 +41,7 @@
             <div class="col heading">
               <h1 class="name">Christian Borza</h1>
               <h2 class="title">
-                „Kundenfokussierter Allrounder mit digitaler Expertise und
-                Empathie“
+                "Customer-Focused Allrounder with Digital Expertise and Empathy"
               </h2>
             </div>
           </div>
@@ -55,7 +53,7 @@
                 >
                   <a href="index.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-home" aria-hidden="true"></i
-                    ><span>Herzlich Willkommen</span></a
+                    ><span>Welcome</span></a
                   >
                 </li>
                 <li
@@ -63,7 +61,7 @@
                 >
                   <a href="resume.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-graduation-cap" aria-hidden="true"></i
-                    ><span>Mein Werdegang</span></a
+                    ><span>My Journey</span></a
                   >
                 </li>
                 <li
@@ -71,7 +69,7 @@
                 >
                   <a href="contact.html" class="hvr-sweep-to-bottom"
                     ><i class="fa fa-comments" aria-hidden="true"></i
-                    ><span>Let´s connect</span></a
+                    ><span>Let’s Connect</span></a
                   >
                 </li>
                 <li
@@ -84,7 +82,7 @@
                     data-bs-target="#cvDownloadModal"
                   >
                     <i class="fa fa-download" aria-hidden="true"></i>
-                    <span>Download Lebenslauf</span>
+                    <span>Download CV</span>
                   </a>
                 </li>
               </ul>
@@ -98,15 +96,14 @@
         <div class="row bg-color-contact">
           <div class="col">
             <h3 class="contact-heading uppercase text-center">
-              Interessiert an einer Zusammenarbeit?
+              Interested in Collaborating?
             </h3>
             <p class="text-center text-container">
-              Ich bin immer auf der Suche nach spannenden Möglichkeiten im
-              Sales- und Tech-Bereich, um meine Expertise in Kundenbeziehungen
-              und technischen Lösungen einzubringen. Wenn Sie eine Position zu
-              besetzen haben, die technisches Verständnis, Vertriebsaffinität
-              und Kundenorientierung vereint, freue ich mich darauf, von Ihnen
-              zu hören. Lassen Sie uns ins Gespräch kommen!
+              I am always looking for exciting opportunities in Sales and Tech
+              to leverage my expertise in customer relations and technical
+              solutions. If you’re hiring for a role that combines technical
+              understanding, a sales-driven mindset, and customer orientation,
+              I’d love to hear from you. Let’s connect and start a conversation!
             </p>
 
             <div class="center-form">
@@ -132,13 +129,13 @@
                   name="projectsummary"
                   id="projectsummary"
                   class="form-control"
-                  placeholder="Wie kann ich Ihnen weiterhelfen?"
+                  placeholder="How can I assist you?"
                   required
                 ></textarea>
                 <div class="form-row text-center">
                   <div class="col">
                     <button type="submit" class="btn btn-secondary">
-                      Nachricht senden
+                      Send Message
                     </button>
                   </div>
                 </div>
@@ -151,21 +148,19 @@
     <footer class="container-fluid container-footer">
       <div id="footer-details" class="row">
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub underline">Kurzprofil</h5>
+          <h5 class="uppercase general-sub underline">Summary</h5>
           <p class="inline-block">
-            „Als kundenorientierter Allrounder mit digitalem Weitblick verstehe
-            ich es, die Bedürfnisse meiner Kunden präzise zu erkennen und in
-            praxisnahe, innovative Lösungen zu übersetzen. Ob im Vertrieb, in
-            der Beratung oder bei technischen Herausforderungen – mit meiner
-            Erfahrung und Empathie schaffe ich nachhaltigen Mehrwert und
-            langfristige Beziehungen.“
+            "As a customer-centric all-rounder with a digital perspective, I
+            understand how to accurately identify my clients' needs and
+            translate them into practical, innovative solutions. Whether in
+            sales, consulting, or technical challenges – my experience and
+            empathy foster sustainable value and long-term relationships."
           </p>
         </div>
         <div class="col-sm-4">
-          <h5 class="uppercase general-sub underline">Download Bereich</h5>
+          <h5 class="uppercase general-sub underline">Download Section</h5>
           <p class="inline-block">
-            Sie benötigen eine druckbare Version meines Werdegangs? Hier geht es
-            zum Download.
+            Need a printable version of my career path? Download it here.
             <a
               href="#"
               class="cv-pdf"
@@ -173,7 +168,7 @@
               data-bs-target="#cvDownloadModal"
             >
               <i class="fa fa-download" aria-hidden="true"></i>
-              <span class="sr-only">Download-Link.</span>
+              <span class="sr-only">Download link.</span>
             </a>
           </p>
         </div>
@@ -204,14 +199,13 @@
         const form = document.querySelector("form");
 
         form.addEventListener("submit", function (event) {
-          // Wartezeit auf 500ms reduzieren, um sicherzustellen, dass Formspree die Daten absenden kann
           setTimeout(() => {
             form.reset();
           }, 500);
         });
       });
     </script>
-    <!-- Modal für CV-Download-Sprachauswahl -->
+    <!-- Modal for CV Download Language Selection -->
     <div
       class="modal fade"
       id="cvDownloadModal"
@@ -222,21 +216,16 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="cvDownloadModalLabel">
-              Lebenslauf herunterladen
-            </h5>
+            <h5 class="modal-title" id="cvDownloadModalLabel">Download CV</h5>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
-              aria-label="Schließen"
+              aria-label="Close"
             ></button>
           </div>
           <div class="modal-body">
-            <p>
-              Bitte wählen Sie Ihre bevorzugte Sprache für den
-              Lebenslauf-Download:
-            </p>
+            <p>Please select your preferred language for the CV download:</p>
           </div>
           <div class="modal-footer">
             <a
@@ -251,7 +240,7 @@
               class="btn btn-secondary"
               download
             >
-              Englisch
+              English
             </a>
           </div>
         </div>
