@@ -505,19 +505,6 @@ button[type="submit"] {
   }
 }
 
-@media (max-width: 767px) {
-  #nav li:nth-child(3),
-  #nav li:nth-child(4) {
-    border-top: 1px solid #ccc;
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    min-height: 250px;
-  }
-}
-
 @media (max-width: 768px) {
   .col.heading {
     padding: 10px;
@@ -543,7 +530,7 @@ button[type="submit"] {
     right: 5px;
     top: 20px;
   }
-  
+
   .flag-icon {
     width: 20px;
     height: 20px;
@@ -551,5 +538,22 @@ button[type="submit"] {
 
   .language-switch-btn {
     font-size: 12px;
+  }
+
+  #nav li:nth-child(3),
+  #nav li:nth-child(4) {
+    border-top: 1px solid #ccc;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    min-height: 250px;
+  }
+
+  .chart-title {
+    font-size: 12px; /* Passt die Schriftgröße an */
+    white-space: normal; /* Ermöglicht Zeilenumbrüche */
+    text-align: center; /* Zentriert die Titel */
   }
 }
