@@ -254,6 +254,11 @@ header {
   font-size: 26px;
 }
 
+.menuitem a.active {
+  background-color: #3a3f47;
+  border-top: 3px solid #e67e22;
+}
+
 .menuitem span {
   display: block;
   width: 100%;
