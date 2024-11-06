@@ -550,10 +550,4 @@ button[type="submit"] {
   .logo {
     min-height: 250px;
   }
-
-  .chart-title {
-    font-size: 12px; /* Passt die Schriftgröße an */
-    white-space: normal; /* Ermöglicht Zeilenumbrüche */
-    text-align: center; /* Zentriert die Titel */
-  }
 }
