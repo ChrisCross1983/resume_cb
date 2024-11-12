@@ -354,6 +354,39 @@
           </div>
         </div>
       </div>
+      <!-- Cookie Banner -->
     </div>
+    <div id="cookie-banner" class="cookie-banner bg-color-name-title">
+      <p class="cookie-text">
+        Diese Website verwendet Cookies, um Ihr Nutzungserlebnis zu verbessern.
+        Indem Sie fortfahren, stimmen Sie der Verwendung von Cookies zu.
+        <a href="impressum.html" class="footer-link" target="_blank">Mehr erfahren</a>
+      </p>
+      <button id="accept-cookies" class="cookie-btn">Akzeptieren</button>
+      <button id="decline-cookies" class="cookie-btn">Ablehnen</button>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptButton = document.getElementById("accept-cookies");
+        const declineButton = document.getElementById("decline-cookies");
+
+        if (!document.cookie.includes("cookiesAccepted=")) {
+          cookieBanner.style.display = "block";
+        }
+
+        acceptButton.addEventListener("click", function () {
+          document.cookie =
+            "cookiesAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 30;
+          cookieBanner.style.display = "none";
+        });
+
+        declineButton.addEventListener("click", function () {
+          document.cookie =
+            "cookiesAccepted=false; path=/; max-age=" + 60 * 60 * 24 * 30;
+          cookieBanner.style.display = "none";
+        });
+      });
+    </script>
   </body>
 </html>

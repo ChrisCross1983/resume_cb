@@ -499,6 +499,53 @@ button[type="submit"] {
   background-color: #e67e22;
 }
 
+/* ------------------------------------------- Cookie Banner */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  display: none; /* initially hidden */
+  z-index: 1000;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cookie-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  display: inline-block;
+}
+
+.cookie-btn {
+  background-color: #e67e22;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-family: "Exo", sans-serif;
+  font-weight: 400;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-btn:hover {
+  background-color: #ff9a44;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #ff9a44;
+}
+
 /* ------------------------------------------- Imprint Styling */
 
 .legal-page {
