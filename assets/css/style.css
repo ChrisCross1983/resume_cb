@@ -499,6 +499,20 @@ button[type="submit"] {
   background-color: #e67e22;
 }
 
+/* ------------------------------------------- Visitor Counter */
+
+.visitor-counter {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
 /* ------------------------------------------- Cookie Banner */
 
 .cookie-banner {
