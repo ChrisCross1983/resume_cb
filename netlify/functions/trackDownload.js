@@ -1,26 +1,33 @@
-const fs = require("fs");
-const path = require("path");
-
-const filePath = path.join(__dirname, "downloads.json");
+const fetch = require("node-fetch");
 
 exports.handler = async (event, context) => {
   if (event.httpMethod === "POST") {
     const timestamp = new Date().toISOString();
-    let downloads = [];
 
-    if (fs.existsSync(filePath)) {
-      const data = fs.readFileSync(filePath);
-      downloads = JSON.parse(data);
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbyKRoP8YkCnV5LwwOOqbMqbHWtmGmAVPQuY96gx9U8xdf2P3WPc1zVczCg7_UN2m48V/exec",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ timestamp }),
+        }
+      );
+
+      const responseBody = await response.text();
+      return {
+        statusCode: 200,
+        body: responseBody,
+      };
+    } catch (error) {
+      return {
+        statusCode: 500,
+        body: JSON.stringify({
+          error: "Error while sending data to Google Sheet",
+          details: error.message,
+        }),
+      };
     }
-
-    downloads.push({ timestamp });
-
-    fs.writeFileSync(filePath, JSON.stringify(downloads, null, 2));
-
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Download tracked", timestamp }),
-    };
   } else {
     return {
       statusCode: 405,
