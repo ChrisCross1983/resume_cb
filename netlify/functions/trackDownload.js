@@ -5,6 +5,7 @@ exports.handler = async (event, context) => {
     const timestamp = new Date().toISOString();
 
     try {
+      // Sende eine POST-Anfrage an das Google Apps Script
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbyKRoP8YkCnV5LwwOOqbMqbHWtmGmAVPQuY96gx9U8xdf2P3WPc1zVczCg7_UN2m48V/exec",
         {
