@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 exports.handler = async (event, context) => {
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/YOUR_WEB_APP_ID/exec"
+      "https://script.google.com/macros/s/AKfycbyKRoP8YkCnV5LwwOOqbMqbHWtmGmAVPQuY96gx9U8xdf2P3WPc1zVczCg7_UN2m48V/exec"
     );
 
     const responseBody = await response.json();
