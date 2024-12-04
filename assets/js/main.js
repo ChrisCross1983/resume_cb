@@ -1,11 +1,15 @@
 // Visitor Counter
-fetch("/.netlify/functions/visitorCount")
-  .then((response) => response.json())
-  .then((data) => {
+document.addEventListener("DOMContentLoaded", async function () {
+  try {
+    const response = await fetch("/.netlify/functions/visitorCount");
+    const data = await response.json();
     document.getElementById(
       "visitor-count"
-    ).innerText = `Besucher: ${data.count}`;
-  });
+    ).textContent = `Besucher: ${data.count}`;
+  } catch (error) {
+    console.error("Fehler beim Abrufen des Besucherzählers:", error);
+  }
+});
 
 // Event Listener for CV-Download
 document.addEventListener("DOMContentLoaded", function () {
