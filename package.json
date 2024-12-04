@@ -1,0 +1,15 @@
+{
+  "name": "resume_cb",
+  "version": "1.0.0",
+  "description": "[Here is the deployed site](https://chriscross1983.github.io/resume_cb/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
